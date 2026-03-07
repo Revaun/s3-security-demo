@@ -29,8 +29,22 @@ This project showcases the **principle of least privilege** by restricting a use
 ---
 
 ### Step 3: CLI Configuration
-![cli_config.png](snapshots/cli_config.png)  
-*Screenshot: AWS CLI configured with revaun-s3 credentials*
+
+In this step, the AWS CLI was configured with the `revaun-s3` IAM user profile to enable secure interaction with the S3 bucket.
+
+> ⚠️ **Security Hygiene Note:** Sensitive credentials have been redacted in the snapshot below to prevent exposure. This demonstrates awareness of cloud security best practices.
+
+![CLI configuration snapshot (sensitive credentials redacted for security hygiene)](snapshots/cli_config.png)
+
+#### Commands Used
+
+```bash
+# Configure AWS CLI with IAM user credentials
+aws configure --profile revaun-s3
+
+# Verify configuration by listing S3 buckets
+aws s3 ls --profile revaun-s3
+
 
 ---
 
