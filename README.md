@@ -60,6 +60,13 @@ aws s3 ls --profile revaun-s3
 
 ---
 
+### Step 6: Security Hygiene Notes
+- All sensitive credentials have been redacted from snapshots to prevent exposure.
+- IAM policies were applied following the principle of least privilege.
+- Demonstrates awareness of secure cloud practices and professional documentation standards.
+
+---
+
 ## ✅ Outcome
 This demo demonstrates the principle of least privilege:
 - Uploads are permitted for the restricted IAM user.  
